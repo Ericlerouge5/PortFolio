@@ -1,0 +1,162 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <!-- Home -->
+    <div class="wrapper style1 first">
+        <article class="container" id="top">
+            <div class="row">
+                <div class="4u 12u(mobile)">
+                    <span class="image fit">
+                        {% image '@AppBundle/Resources/public/images/pic00.jpg'  output="images/pic00.jpg" %}
+                        <img src="{{ asset_url }}" width="100%" height="100%" alt="Mon portrait" class="pull-left">
+                        {% endimage %}
+                    </span>
+                </div>
+                <div class="8u 12u(mobile)">
+                    <header>
+                        <h1>Bonjour. Je m'appelle <strong>Pinel Eric</strong>.</h1>
+                    </header>
+                    <p>Je suis développeur full stack <strong>Symfony 2</strong>, je travaille dans le développement Web depuis plus de 10 ans, d'ailleurs ce graphisme de site en intégré en symfony 2</p>
+                    <a href="#work" class="button big scrolly">Renseignez-vous sur ce que je fais</a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Work -->
+    <div class="wrapper style2">
+        <article id="work">
+            <header>
+                <h2>Voici ce que je sais faire.</h2>
+                <p></p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <section class="box style1">
+                            <span class="icon featured fa-comments-o"></span>
+                            <h3>Consequat lorem</h3>
+                            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                        </section>
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        <section class="box style1">
+                            <span class="icon featured fa-camera-retro"></span>
+                            <h3>Lorem dolor tempus</h3>
+                            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                        </section>
+                    </div>
+                    <div class="4u 12u(mobile)">
+                        <section class="box style1">
+                            <span class="icon featured fa-thumbs-o-up"></span>
+                            <h3>Feugiat posuere</h3>
+                            <p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+                <p></p>
+                <a href="#portfolio" class="button big scrolly">Voir certains de mes travaux récents</a>
+            </footer>
+        </article>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="wrapper style3">
+        <article id="portfolio">
+            <header>
+                <h2>Voici quelques travaux que j'ai fais récemment.</h2>
+                <p></p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <article class="box style2">
+                            <a href="#" class="image featured">
+                                {% image '@AppBundle/Resources/public/images/pic01.jpg'  output="images/pic01.jpg" %}
+                                <img src="{{ asset_url }}" width="100%" height="100%" alt="Image 1" class="pull-left">
+                                {% endimage %}
+                            </a>
+                            <h3><a href="#">Magna feugiat</a></h3>
+                            <p>Ce site est propulsé par symfony 2</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p></p>
+                <a href="#contact" class="button big scrolly">Entrez en contact avec moi</a>
+            </footer>
+        </article>
+    </div>
+
+    <!-- Contact -->
+    <div class="wrapper style4">
+        <article id="contact" class="container 75%">
+            <header>
+                <h2>Je peux vous aider dans des travaux.</h2>
+                <p></p>
+            </header>
+            <div>
+                <div class="row">
+                    <div class="12u">
+                        <form method="post" action="#">
+                            <div>
+                                <div class="row">
+                                    <div class="6u 12u(mobile)">
+                                        <input type="text" name="name" id="name" placeholder="Nom complet" />
+                                    </div>
+                                    <div class="6u 12u(mobile)">
+                                        <input type="text" name="email" id="email" placeholder="E-mail" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="12u">
+                                        <input type="text" name="subject" id="subject" placeholder="Sujet" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="12u">
+                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row 200%">
+                                    <div class="12u">
+                                        <ul class="actions">
+                                            <li><input type="submit" value="Envoyer le message" /></li>
+                                            <li><input type="reset" value="Vider le formulaire" class="alt" /></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="12u">
+                        <hr />
+                        <h3>Retrouvez-moi sur ...</h3>
+                        <ul class="social">
+                            <li><a href="https://twitter.com/Ericlerouge5" class="icon fa-twitter" title="Twitter" target="_blank"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/eric.pinel.5" class="icon fa-facebook" title="Facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                            <li><a href="https://fr.linkedin.com/in/eric-pinel-514b487b" class="icon fa-linkedin" title="LinkedIn" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://plus.google.com/u/0/101732861131330294124" class="icon fa-google-plus" title="Google+" target="_blank"><span class="label">Google+</span></a></li>
+                            <li><a href="https://github.com/Ericlerouge5" class="icon fa-github" title="Github" target="_blank"><span class="label">Github</span></a></li>
+                            <li><a href="skype:pinel_eric5?call" class="icon fa-skype" title="Skype" target="_blank"><span class="label">Skype</span></a></li>
+                            <li><a href="http://pastebin.com/u/ericlerouge5" class="icon fa-pastebin" title="Pastebin"><span class="label">Pastebin</span></a></li>
+                            <li><a href="https://www.hopwork.fr/profile/ericpinel" class="icon fa-hopwork" title="Hopwork"><span class="label">Hopwork</span></a></li>
+                        </ul>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul id="copyright">
+                    <li>&copy; Pinel Eric. Tous droits réservés.</li><li>Conception : <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+                </ul>
+            </footer>
+        </article>
+    </div>
+{% endblock %}
